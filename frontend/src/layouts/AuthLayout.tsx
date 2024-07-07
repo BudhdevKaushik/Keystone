@@ -6,11 +6,12 @@ const AuthLayout: React.FC = () => {
   return (
     <Screen>
       <div className="w-full h-full flex">
-        <div className="w-[70%] bg-lightPurple">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          consequuntur deserunt dignissimos amet possimus rerum blanditiis
-          voluptate recusandae expedita accusamus, atque sit in laborum
-          quisquam. Laudantium optio omnis placeat minus!
+        <div className="w-[70%] flex flex-col items-center justify-center">
+          <div className="flex items-center gap-2">
+            <h1>Welcome to</h1>
+            <p className="text-primary uppercase font-bold">Keystone</p>
+          </div>
+          <img className="w-[500px]" src="/images/auth.svg" alt="" />
         </div>
         <div className="w-[30%]">
           <Outlet />
